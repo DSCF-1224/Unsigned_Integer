@@ -2,57 +2,6 @@ submodule (pkg_unsigned_integer) imp_calc_unsigned_add
 
     ! <interface>s for this <submodule>
 
-    interface update_unsigned_add
-
-        module pure elemental function update_unsigned_add_int8 ( unsigned_add , pos ) result(updated)
-
-            ! argument(s) for this <function>
-            integer(INT8) , intent(in) :: unsigned_add
-            integer       , intent(in) :: pos
-
-            ! return value of this <function>
-            integer(INT8) :: updated
-
-        end function update_unsigned_add_int8
-
-
-        module pure elemental function update_unsigned_add_int16 ( unsigned_add , pos ) result(updated)
-
-            ! argument(s) for this <function>
-            integer(INT16) , intent(in) :: unsigned_add
-            integer        , intent(in) :: pos
-
-            ! return value of this <function>
-            integer(INT16) :: updated
-
-        end function update_unsigned_add_int16
-
-
-        module pure elemental function update_unsigned_add_int32 ( unsigned_add , pos ) result(updated)
-
-            ! argument(s) for this <function>
-            integer(INT32) , intent(in) :: unsigned_add
-            integer        , intent(in) :: pos
-
-            ! return value of this <function>
-            integer(INT32) :: updated
-
-        end function update_unsigned_add_int32
-
-
-        module pure elemental function update_unsigned_add_int64 ( unsigned_add , pos ) result(updated)
-
-            ! argument(s) for this <function>
-            integer(INT64) , intent(in) :: unsigned_add
-            integer        , intent(in) :: pos
-
-            ! return value of this <function>
-            integer(INT64) :: updated
-
-        end function update_unsigned_add_int64
-
-    end interface update_unsigned_add
-
     interface
 
         module pure elemental function add_bin_with_carry ( lower , upper , carry ) result(add)

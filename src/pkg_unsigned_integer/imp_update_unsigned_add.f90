@@ -1,4 +1,4 @@
-submodule (pkg_unsigned_integer : imp_calc_unsigned_add) imp_update_unsigned_add
+submodule (pkg_unsigned_integer) imp_update_unsigned_add
 
     ! contained <subroutine>s and <function>s are below
     contains
